@@ -36,7 +36,7 @@ The actual user is added to the `%sink` group. This group allows passwordless `s
    ```deluser yournamehere sudo```
    
 6. Optional: Remove Cached sudo password and try out new sudoers config
-   ```sudo -k ```
+   ```sudo -k```
 
    Make sure that no other Group is messing with the Sink Group configuration, else it won't work!
   </div>
