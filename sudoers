@@ -2,14 +2,26 @@ Defaults        env_reset
 Defaults        mail_badpass
 Defaults        secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
 Defaults        use_pty
-Defaults        rootpw
+
+#Defaults
+Defaults:%sink      rootpw
+Defaults:%sink      timestamp_timeout=0
+
+#Alias
+Cmnd_Alias         SENSITIVE = /usr/bin/rm * /etc/hosts, /usr/bin/su , /usr/bin/vim /etc/hosts, /usr/bin/nano /etc/hosts, /usr/sbin/visudo, /usr/bin/tee * /etc/hosts
+
 # Host alias specification
 
 # User privilege specification
 root    ALL=(ALL:ALL) ALL
 
-# Allow members of group sudo to execute any command
+
+# group
 %sudo   ALL=(ALL:ALL) ALL
+
+# members of group
+%sink   ALL=(ALL:ALL)   NOPASSWD: ALL
+%sink   ALL=(ALL:ALL)   PASSWD: SENSITIVE
 
 # See sudoers(5) for more information on "@include" directives:
 @includedir /etc/sudoers.d
