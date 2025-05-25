@@ -6,3 +6,5 @@ A minimal system-hardening tool that uses custom sudoers configurations to lock 
 <pre>
 1. Create 
 </pre>
+
+<pre>Credits : https://serversforhackers.com/c/sudo-and-sudoers-configuration</pre>
