@@ -49,7 +49,8 @@ This is a reference to <a href="https://en.wikipedia.org/wiki/Behavioral_sink">B
 
 https://serversforhackers.com/c/sudo-and-sudoers-configuration</pre> - this has helped me understand the fundamentals 
 https://www.sudo.ws/docs/man/1.8.17/sudoers.man/#Configuring_sudo.conf_for_sudoers - sudo manual
-
+https://github.com/badmojr/addons_1Hosts?tab=readme-ov-file - nsfw blocklist
+https://github.com/hagezi/dns-blocklists - misc blocklist
 
 Made with <3 by Byuri
 
