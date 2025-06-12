@@ -1,5 +1,9 @@
 # sudoers-hosts-guard
 
+
+![Frame 10](https://github.com/user-attachments/assets/88d677d9-58a9-4299-bff2-6ac440a72d8a)
+
+
 A minimal system-hardening tool that uses custom sudoers configurations to lock down write access to /etc/hosts, preventing manual overrides of host-based blocklists.
 
 # How does it work?
