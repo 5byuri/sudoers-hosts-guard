@@ -46,6 +46,11 @@ The actual user is added to the `%sink` group. This group allows passwordless `s
   </div>
 
 
+# Polkit rules
+These polkit rules will apply to Thunar and create a NOPASS rule when mounting drives
+
+```tba```
+
 # Why is the Group called Sink?
 This is a reference to <a href="https://en.wikipedia.org/wiki/Behavioral_sink">Behavioral Sink</a>, you could name it anything you want by changing the name in the config.
 
