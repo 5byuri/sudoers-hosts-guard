@@ -53,8 +53,16 @@ These polkit rules will apply to Thunar and create a NOPASS rule when mounting d
 
 # Chattr
 Chattr can lockup tools so you can not edit or delete them whatsover, this can be combined with sudoers-hosts-guard to remove yourself from the equation
-`tbd`
+`tba`
 
+# Flatpak
+Configuring Flatpak to prevent installing tools like tor that could bypass the blocklist entirely
+`tba`
+
+# nsswitch 
+Determines the order of lookup methods (e.g. files, dns, etc.), configuring this part is important to have vpn abide by your /etc/hosts file
+
+`tba`
 
 # Why is the Group called Sink?
 This is a reference to <a href="https://en.wikipedia.org/wiki/Behavioral_sink">Behavioral Sink</a>, you could name it anything you want by changing the name in the config.
