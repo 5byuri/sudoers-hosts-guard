@@ -3,12 +3,12 @@ Defaults        mail_badpass
 Defaults        secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
 Defaults        use_pty
 
-#Defaults
+# Für sink: root-Passwort statt User-Passwort und kein Caching
 Defaults:%sink      rootpw
 Defaults:%sink      timestamp_timeout=0
 
-#Alias
-Cmnd_Alias         SENSITIVE = /usr/bin/rm * /etc/hosts, /usr/bin/su , /usr/bin/vim /etc/hosts, /usr/bin/nano /etc/hosts, /usr/sbin/visudo, /usr/bin/tee * /etc/hosts
+# Alias nur für das Tool, das ein Passwort braucht
+Cmnd_Alias         SENSITIVE = /usr/bin/rm * /etc/hosts, /usr/bin/su , /usr/bin/vim /etc/hosts, /usr/bin/nano /etc/hosts, /usr/sbin/visudo, /usr/bin/tee * /etc/hosts, /usr/bin/mv * /etc/hosts, /usr/bin/cp /etc/hosts, /usr/bin/vim /etc/*, /usr/bin/vim * hosts, /usr/bin/chattr, /usr/bin/dpkg *tor*, /usr/bin/apt *tor*, /usr/bin/apt-get *tor*, /usr/bin/flatpak *tor*, /usr/bin/flatpak install *tor*, /usr/bin/flatpak run *tor*
 
 # Host alias specification
 
@@ -16,10 +16,10 @@ Cmnd_Alias         SENSITIVE = /usr/bin/rm * /etc/hosts, /usr/bin/su , /usr/bin/
 root    ALL=(ALL:ALL) ALL
 
 
-# group
+# Mitglieder der sudo-Gruppe dürfen alles (User-Passwort)
 %sudo   ALL=(ALL:ALL) ALL
 
-# members of group
+# Mitglieder der sink-Gruppe:
 %sink   ALL=(ALL:ALL)   NOPASSWD: ALL
 %sink   ALL=(ALL:ALL)   PASSWD: SENSITIVE
 
