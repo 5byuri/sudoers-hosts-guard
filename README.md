@@ -51,6 +51,11 @@ These polkit rules will apply to Thunar and create a NOPASS rule when mounting d
 
 ```tba```
 
+# Chattr
+Chattr can lockup tools so you can not edit or delete them whatsover, this can be combined with sudoers-hosts-guard to remove yourself from the equation
+`tbd`
+
+
 # Why is the Group called Sink?
 This is a reference to <a href="https://en.wikipedia.org/wiki/Behavioral_sink">Behavioral Sink</a>, you could name it anything you want by changing the name in the config.
 
