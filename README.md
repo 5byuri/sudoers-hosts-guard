@@ -53,6 +53,8 @@ These polkit rules will apply to Thunar and create a NOPASS rule when mounting d
 
 # Chattr
 Chattr can lockup tools so you can not edit or delete them whatsover, this can be combined with sudoers-hosts-guard to remove yourself from the equation
+
+sudoers-hosts-guard actually now uses the +a flag, which disallows anything but appending to the /etc/hosts, I then wrote a wrapper that blocks specific domains and adds them to the list but you can't remove them.
 `tba`
 
 # Flatpak
