@@ -74,7 +74,7 @@ Chattr +a allows the user to append, but not remove. Writing a helper function/s
 example:
 ```
 
-blockdomain example.com
+$ blockdomain example.com
 127.0.0.1    example.com
 has been added!
 
