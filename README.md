@@ -66,6 +66,14 @@ Determines the order of lookup methods (e.g. files, dns, etc.), configuring this
 
 `tba`
 
+
+# blockdomain
+BlockDomain works in a similar way to a barbed fishing hook.
+Chattr +a allows the user to append, but not remove. Writing a helper function/script allows the user to add to the /etc/hosts blocklist without sudo.
+
+`tba`
+
+
 # Why is the Group called Sink?
 This is a reference to <a href="https://en.wikipedia.org/wiki/Behavioral_sink">Behavioral Sink</a>, you could name it anything you want by changing the name in the config.
 
