@@ -71,7 +71,15 @@ Determines the order of lookup methods (e.g. files, dns, etc.), configuring this
 BlockDomain works in a similar way to a barbed fishing hook.
 Chattr +a allows the user to append, but not remove. Writing a helper function/script allows the user to add to the /etc/hosts blocklist without sudo.
 
-`tba`
+example:
+```
+
+blockdomain example.com
+127.0.0.1    example.com
+has been added!
+
+```
+
 
 
 # Why is the Group called Sink?
