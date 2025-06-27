@@ -7,7 +7,7 @@ if [ -z "$1" ]; then
 fi
 
 DOMAIN=$1
-HOSTS_LINE="127.0.0.1    $DOMAIN"
+HOSTS_LINE="0.0.0.0    $DOMAIN"
 
 if grep -qE "^[^#]*[[:space:]]$DOMAIN" /etc/hosts; then
   echo "Entry for '$DOMAIN' already exists in /etc/hosts"
