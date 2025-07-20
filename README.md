@@ -75,10 +75,14 @@ example:
 ```
 
 $ blockdomain example.com
-127.0.0.1    example.com
+0.0.0.0    example.com
 has been added!
 
 ```
+> 0.0.0.0 is much more efficient.
+0.0.0.0 is commonly used as a non-routable meta-address used to designate an invalid, unknown or non applicable target (a no particular address placeholder). However this is non-standard and possibly in conflict with RFC 1122.
+
+
 
 
 # MacOS
