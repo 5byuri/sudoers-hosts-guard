@@ -93,6 +93,26 @@ sudo dseditgroup -o edit -a $USER -t user sink
 sudo dseditgroup -o edit -d $USER -t user admin
 
 ```
+`chattr` does not exist on MacOS, replace it with `chflags` 
+
+
+arch    "archived flag"
+opaque  "opaque flag"
+nodump  "nodump flag"
+sappnd  "system append-only flag"
+schg    "system immutable flag"
+uappnd  "user append-only flag"
+uchg    "user immutable flag"
+
+
+chflags  | chattr
+-------- | -------- 
+uappnd | -a	   
+sappnd | +a
+uchg | -i
+schg | +i
+
+
 
 
 # Why is the Group called Sink?
