@@ -25,7 +25,7 @@ The actual user is added to the `%sink` group. This group allows passwordless `s
   
 2. Asign our user to `sink`
    
-```sudo usermod -a -G sink yournamehere```
+```sudo usermod -a -G sink $USER```
 
   
 3. Check if everything has worked
@@ -37,7 +37,7 @@ The actual user is added to the `%sink` group. This group allows passwordless `s
 
 4. Remove the sudo role, don't worry sudo will still work and this step is safe!
 
-   ```deluser yournamehere sudo```
+   ```deluser $USER sudo```
    
 6. Optional: Remove Cached sudo password and try out new sudoers config
    ```sudo -k```
@@ -80,6 +80,19 @@ has been added!
 
 ```
 
+
+# MacOS
+
+Still apply the sudoers config, the Alias is important as well as the Group
+
+```
+sudo dseditgroup -o create sink
+
+sudo dseditgroup -o edit -a $USER -t user sink
+
+sudo dseditgroup -o edit -d $USER -t user admin
+
+```
 
 
 # Why is the Group called Sink?
