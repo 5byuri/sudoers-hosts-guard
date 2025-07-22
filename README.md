@@ -116,6 +116,7 @@ sappnd | +a
 uchg | -i
 schg | +i
 
+`no<insert chflags>` removes the flag
 
 
 
